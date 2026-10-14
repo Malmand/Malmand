@@ -1,6 +1,6 @@
 ## Hi, I'm Mohamed Al-Mandhari
 
-Energy systems engineer working where **physical models meet data**: energy storage, Power-to-X, local energy systems and wind, from cell and reactor models to optimisation, machine learning and automated monitoring tools.
+Energy systems engineer working where **physical models meet data**: energy storage, Power-to-X, multi-energy systems at neighbourhood scale and wind, from cell and reactor models to optimisation, machine learning and automated monitoring tools.
 
 - Erasmus Mundus Master's in Decentralised Smart Energy Systems (DENSYS): Université de Lorraine (M1, Très Bien), now at Politecnico di Torino, Energy Storage and Power-to-X track
 - BEng Renewable Energy Engineering, University of Exeter (First-Class Honours)
@@ -18,10 +18,11 @@ Energy systems engineer working where **physical models meet data**: energy stor
 | [pv-pem-electrolyser-degradation](https://github.com/Malmand/pv-pem-electrolyser-degradation) | Year-long PV-PEM electrolyser simulation of performance and degradation, Oman vs UK; code for an *Energies* Editor's Choice article | Python, pvlib |
 | [AEM_Case_based](https://github.com/Malmand/AEM_Case_based) | AEM water electrolyser model: electrochemical fitting, 1D thermal model, efficiency, wet vs dry cathode, EIS calibration | Python, SciPy |
 
-**Optimisation, control and grids**
+**Multi-energy systems, optimisation and grids**
 
 | Project | What it does | Stack |
 |---|---|---|
+| [muscat-energy-hub](https://github.com/Malmand/muscat-energy-hub) | Sizing a district-cooled neighbourhood of 60 villas in Muscat (PV, battery, chiller, chilled-water tank, PEM electrolyser, hydrogen) with a simple and a detailed model of every component, to see which details change the optimal design: building thermal mass inside the MILP cuts the optimal tank by 39%; regret and Latin hypercube uncertainty analysis; new OMEGAlpes units for a temperature-dependent chiller and a PEM electrolyser, with tests | Python, Pyomo, HiGHS, OMEGAlpes, pvlib, pytest |
 | [residential-microgrid-ems](https://github.com/Malmand/residential-microgrid-ems) | Home microgrid with PV, battery, bidirectional EV and heat pump: rule-based vs MILP control, annual sizing, XGBoost forecast-driven MPC, dispatch coupled with AC load flow on an LV feeder, and automated closed-loop tests of a battery site controller | Python, Pyomo, HiGHS, XGBoost, pandapower |
 
 **Data, machine learning and monitoring**
@@ -43,7 +44,7 @@ Full list on [ORCID](https://orcid.org/0009-0000-8533-8702).
 
 ### Tools
 
-**Modelling and optimisation:** Python, Pyomo (MILP/LP), HiGHS, Gurobi, SciPy, PyBaMM, pandapower, MATLAB/Simulink, FMI/FMU · **Data and ML:** pandas, NumPy, SQL, scikit-learn, XGBoost, PyTorch, TensorFlow · **Signal processing and fatigue:** filtering, envelope and spectral analysis, rainflow counting · **Energy tools:** pvlib, PVsyst, HOMER Pro, QGIS, GaBi, openLCA
+**Modelling and optimisation:** Python, Pyomo (MILP/LP), OMEGAlpes, HiGHS, Gurobi, SciPy, PyBaMM, pandapower, MATLAB/Simulink, FMI/FMU · **Data and ML:** pandas, NumPy, SQL, pytest, uncertainty and sensitivity analysis, scikit-learn, XGBoost, PyTorch, TensorFlow · **Signal processing and fatigue:** filtering, envelope and spectral analysis, rainflow counting · **Energy tools:** pvlib, PVsyst, HOMER Pro, QGIS, GaBi, openLCA
 
 ### Contact
 
