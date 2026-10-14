@@ -28,7 +28,7 @@ PV, battery, bidirectional EV and heat pump: MILP control, annual sizing, foreca
 
 ### More projects
 
-- **[ptx-methanol-surrogate](https://github.com/Malmand/ptx-methanol-surrogate)**: physics-constrained machine-learning surrogates of a power-to-methanol reactor, trained on noisy operating logs.
+- **[ptx-methanol-surrogate](https://github.com/Malmand/ptx-methanol-surrogate)**: physics-constrained machine-learning surrogates of a power-to-methanol reactor, trained on noisy operating logs simulated with a kinetic plant model.
 - **[pv-pem-electrolyser-degradation](https://github.com/Malmand/pv-pem-electrolyser-degradation)**: a year of PV-driven PEM electrolyser performance and ageing in Oman and the UK; code for an *Energies* Editor's Choice article.
 - **[energy-time-series-transfer-learning](https://github.com/Malmand/energy-time-series-transfer-learning)**: household PV and load forecasting with LSTM and Transformer models, transfer learning, and EV and heat-pump detection from meter data.
 - **[AEM_Case_based](https://github.com/Malmand/AEM_Case_based)**: electrochemical and thermal model of an AEM water electrolyser, calibrated on polarisation and EIS data.
