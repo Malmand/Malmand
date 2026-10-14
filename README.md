@@ -1,22 +1,35 @@
 ## Hi, I'm Mohamed Al-Mandhari
 
-Energy systems engineer working on **optimisation, forecasting and modelling of local energy systems**: home and community microgrids, battery storage, and solar-powered green hydrogen.
+Energy systems engineer working where **physical models meet data**: energy storage, Power-to-X, local energy systems and wind, from cell and reactor models to optimisation, machine learning and automated monitoring tools.
 
 - Erasmus Mundus Master's in Decentralised Smart Energy Systems (DENSYS): Université de Lorraine (M1, Très Bien), now at Politecnico di Torino, Energy Storage and Power-to-X track
 - BEng Renewable Energy Engineering, University of Exeter (First-Class Honours)
 - Peer-reviewed publications on PV, floating PV, agrivoltaics and green hydrogen
-- Looking for a Master's thesis internship from February 2027, and interested in continuing to a PhD
+- Looking for a six-month Master's thesis internship from March 2027 (mid-February possible), and interested in continuing to a PhD
 
 ### Projects
 
+**Energy storage and Power-to-X**
+
 | Project | What it does | Stack |
 |---|---|---|
-| [residential-microgrid-ems](https://github.com/Malmand/residential-microgrid-ems) | Home microgrid with PV, battery, bidirectional EV and heat pump: rule-based vs MILP control, annual planning and sizing, XGBoost forecast-driven MPC, dispatch coupled with load flow on an LV feeder, and automated closed-loop tests of a battery site controller | Python, Pyomo, HiGHS, XGBoost, pandapower |
+| [hybrid-energy-storage-pybamm](https://github.com/Malmand/hybrid-energy-storage-pybamm) | PyBaMM battery model calibrated against experimental data, reduced to equivalent-circuit models, and used to size a battery-supercapacitor system and its energy management; plant exported as an FMI 2.0 FMU | Python, PyBaMM, pythonfmu, fmpy |
 | [ptx-methanol-surrogate](https://github.com/Malmand/ptx-methanol-surrogate) | Power-to-methanol reactor: cleaning noisy operational logs, physics-constrained ML surrogates that respect mass balances and equilibrium, and an optimiser for operating parameters | Python, scikit-learn, SciPy |
-| [hybrid-energy-storage-pybamm](https://github.com/Malmand/hybrid-energy-storage-pybamm) | PyBaMM battery model calibrated against experimental data, reduced to equivalent-circuit models, and used to size a battery-supercapacitor system with its energy management; plant exported as an FMI 2.0 FMU | Python, PyBaMM, pythonfmu, fmpy |
-| [energy-time-series-transfer-learning](https://github.com/Malmand/energy-time-series-transfer-learning) | Household PV and grid-import forecasting with LSTM and Transformer models and transfer learning; identifying EV charging and heat-pump use from smart-meter data alone | PyTorch, TensorFlow, XGBoost |
 | [pv-pem-electrolyser-degradation](https://github.com/Malmand/pv-pem-electrolyser-degradation) | Year-long PV-PEM electrolyser simulation of performance and degradation, Oman vs UK; code for an *Energies* Editor's Choice article | Python, pvlib |
 | [AEM_Case_based](https://github.com/Malmand/AEM_Case_based) | AEM water electrolyser model: electrochemical fitting, 1D thermal model, efficiency, wet vs dry cathode, EIS calibration | Python, SciPy |
+
+**Optimisation, control and grids**
+
+| Project | What it does | Stack |
+|---|---|---|
+| [residential-microgrid-ems](https://github.com/Malmand/residential-microgrid-ems) | Home microgrid with PV, battery, bidirectional EV and heat pump: rule-based vs MILP control, annual sizing, XGBoost forecast-driven MPC, dispatch coupled with AC load flow on an LV feeder, and automated closed-loop tests of a battery site controller | Python, Pyomo, HiGHS, XGBoost, pandapower |
+
+**Data, machine learning and monitoring**
+
+| Project | What it does | Stack |
+|---|---|---|
+| [wind-fleet-instability-monitoring](https://github.com/Malmand/wind-fleet-instability-monitoring) | Wind fleet analysis: SQL database of SCADA data, data-quality checks, detection of edgewise blade instabilities, rainflow fatigue impact, KPIs and weekly summaries, and a JSON adapter for digital-twin integration | Python, SQL, SciPy, rainflow |
+| [energy-time-series-transfer-learning](https://github.com/Malmand/energy-time-series-transfer-learning) | Household PV and grid-import forecasting with LSTM and Transformer models and transfer learning; identifying EV charging and heat-pump use from smart-meter data alone | PyTorch, TensorFlow, XGBoost |
 
 ### Selected publications
 
@@ -30,7 +43,7 @@ Full list on [ORCID](https://orcid.org/0009-0000-8533-8702).
 
 ### Tools
 
-**Modelling and optimisation:** Python, PyBaMM, Pyomo (MILP/LP), HiGHS, Gurobi, MATLAB/Simulink, FMI/FMU · **Data and ML:** pandas, NumPy, scikit-learn, XGBoost, PyTorch, TensorFlow · **Energy tools:** pvlib, PVsyst, HOMER Pro, QGIS, GaBi, openLCA
+**Modelling and optimisation:** Python, Pyomo (MILP/LP), HiGHS, Gurobi, SciPy, PyBaMM, pandapower, MATLAB/Simulink, FMI/FMU · **Data and ML:** pandas, NumPy, SQL, scikit-learn, XGBoost, PyTorch, TensorFlow · **Signal processing and fatigue:** filtering, envelope and spectral analysis, rainflow counting · **Energy tools:** pvlib, PVsyst, HOMER Pro, QGIS, GaBi, openLCA
 
 ### Contact
 
