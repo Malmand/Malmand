@@ -1,53 +1,54 @@
-## Hi, I'm Mohamed Al-Mandhari
+## Mohamed Al-Mandhari
 
-Energy systems engineer working where **physical models meet data**: energy storage, Power-to-X, multi-energy systems at neighbourhood scale and wind, from cell and reactor models to optimisation, machine learning and automated monitoring tools.
+**Energy systems engineer. I build open, tested models of energy systems and use them to answer design questions.**
 
-- Erasmus Mundus Master's in Decentralised Smart Energy Systems (DENSYS): Université de Lorraine (M1, Très Bien), now at Politecnico di Torino, Energy Storage and Power-to-X track
-- BEng Renewable Energy Engineering, University of Exeter (First-Class Honours)
-- Peer-reviewed publications on PV, floating PV, agrivoltaics and green hydrogen
-- Looking for a six-month Master's thesis internship from March 2027 (mid-February possible), and interested in continuing to a PhD
+My work sits where physical models meet data: batteries and electrolysers, multi-energy neighbourhoods, and wind turbines, from component physics to optimisation, machine learning and validation against measurements. I am on the Erasmus Mundus DENSYS Master's (Université de Lorraine, now Politecnico di Torino) and hold a first-class BEng in Renewable Energy Engineering from the University of Exeter.
 
-### Projects
+**Looking for:** a six-month Master's thesis internship from March 2027 (mid-February possible), with a PhD as the next step.
 
-**Energy storage and Power-to-X**
+---
 
-| Project | What it does | Stack |
-|---|---|---|
-| [hybrid-energy-storage-pybamm](https://github.com/Malmand/hybrid-energy-storage-pybamm) | PyBaMM battery model calibrated against experimental data, reduced to equivalent-circuit models, and used to size a battery-supercapacitor system for frequency reserve; plant exported as an FMI 2.0 FMU; sizing re-checked with a year of measured European grid frequency | Python, PyBaMM, pythonfmu, fmpy |
-| [ptx-methanol-surrogate](https://github.com/Malmand/ptx-methanol-surrogate) | Power-to-methanol reactor: cleaning noisy operational logs, physics-constrained ML surrogates that respect mass balances and equilibrium, and an optimiser for operating parameters | Python, scikit-learn, SciPy |
-| [pv-pem-electrolyser-degradation](https://github.com/Malmand/pv-pem-electrolyser-degradation) | Year-long PV-PEM electrolyser simulation of performance and degradation, Oman vs UK; code for an *Energies* Editor's Choice article | Python, pvlib |
-| [AEM_Case_based](https://github.com/Malmand/AEM_Case_based) | AEM water electrolyser model: electrochemical fitting, 1D thermal model, efficiency, wet vs dry cathode, EIS calibration | Python, SciPy |
+### Featured work
 
-**Multi-energy systems, optimisation and grids**
+**[muscat-energy-hub](https://github.com/Malmand/muscat-energy-hub)** · *How much model detail does a sizing study need?*  
+A district-cooled neighbourhood with PV, battery, chiller, chilled-water tank and a PEM electrolyser, sized with a simple and a detailed model of every component. Most details barely move the design; the buildings' thermal mass cuts the optimal tank by 39%. Includes new, tested OMEGAlpes units for a chiller and an electrolyser.  
+`Pyomo` `HiGHS` `OMEGAlpes` `uncertainty analysis`
 
-| Project | What it does | Stack |
-|---|---|---|
-| [muscat-energy-hub](https://github.com/Malmand/muscat-energy-hub) | Sizing a district-cooled neighbourhood of 60 villas in Muscat (PV, battery, chiller, chilled-water tank, PEM electrolyser, hydrogen) with a simple and a detailed model of every component, to see which details change the optimal design: building thermal mass inside the MILP cuts the optimal tank by 39%; regret and Latin hypercube uncertainty analysis; new OMEGAlpes units for a temperature-dependent chiller and a PEM electrolyser, with tests | Python, Pyomo, HiGHS, OMEGAlpes, pvlib, pytest |
-| [residential-microgrid-ems](https://github.com/Malmand/residential-microgrid-ems) | Home microgrid with PV, battery, bidirectional EV and heat pump: rule-based vs MILP control, annual sizing, XGBoost forecast-driven MPC, dispatch coupled with AC load flow on an LV feeder, and automated closed-loop tests of a battery site controller | Python, Pyomo, HiGHS, XGBoost, pandapower |
+**[wind-fleet-instability-monitoring](https://github.com/Malmand/wind-fleet-instability-monitoring)** · *Turbine loads from SCADA data*  
+Detection of edgewise blade instabilities and their fatigue cost across a fleet, and a machine-learning load emulator for power de-rating, checked against real 20 Hz measurements of a research turbine.  
+`SQL` `SciPy` `XGBoost` `rainflow`
 
-**Data, machine learning and monitoring**
+**[hybrid-energy-storage-pybamm](https://github.com/Malmand/hybrid-energy-storage-pybamm)** · *From cell physics to a sized storage system*  
+A PyBaMM model calibrated on experimental data, reduced to a fast equivalent circuit, and used to size a battery and supercapacitor system for frequency reserve, re-checked on a year of measured grid frequency. Exported as an FMI 2.0 FMU.  
+`PyBaMM` `FMI` `co-simulation`
 
-| Project | What it does | Stack |
-|---|---|---|
-| [wind-fleet-instability-monitoring](https://github.com/Malmand/wind-fleet-instability-monitoring) | Wind fleet analysis: SQL database of SCADA data, data-quality checks, detection of edgewise blade instabilities, rainflow fatigue impact, KPIs and a digital-twin adapter; plus a machine-learning load emulator for power de-rating transients, built on a BEM-based reduced-order aero-servo-elastic turbine model and checked against real 20 Hz load measurements of a research turbine during frequency-control power shedding | Python, SQL, SciPy, XGBoost, rainflow |
-| [energy-time-series-transfer-learning](https://github.com/Malmand/energy-time-series-transfer-learning) | Household PV and grid-import forecasting with LSTM and Transformer models and transfer learning; identifying EV charging and heat-pump use from smart-meter data alone | PyTorch, TensorFlow, XGBoost |
+**[residential-microgrid-ems](https://github.com/Malmand/residential-microgrid-ems)** · *Home energy management, end to end*  
+PV, battery, bidirectional EV and heat pump: MILP control, annual sizing, forecast-driven MPC, coupling with AC load flow on a feeder, and automated tests of a battery controller.  
+`Pyomo` `XGBoost` `pandapower`
 
-### Selected publications
+### More projects
 
-- **Al-Mandhari, M.**, Ghosh, A. (2025). Modelling solar intermittency effects on PEM electrolyser performance and degradation: a comparison of Oman and UK. *Energies*, 18(23), 6131. [doi:10.3390/en18236131](https://doi.org/10.3390/en18236131) · *Editor's Choice*
-- **Al-Mandhari, M.**, Morton, L., Hussain, S.N., Zhou, Z., Chew, Z.J., Ghosh, A. (2026). Floating photovoltaic-powered green hydrogen for decarbonization of the energy-consuming sectors in the United Kingdom. *Energies*, 19(12), 2931. [doi:10.3390/en19122931](https://doi.org/10.3390/en19122931)
-- Sanders, C., Betts, H., Hussain, S.N., **Al-Mandhari, M.**, Ghosh, A. (2026). From pasture to platform: integrating agrivoltaics and green hydrogen for the Penzance-London railway corridor. *Solar Energy*, 318, 115064. [doi:10.1016/j.solener.2026.115064](https://doi.org/10.1016/j.solener.2026.115064)
-- Coleneso, D., **Al-Mandhari, M.**, Hussain, S.N., Ghosh, A. (2026). Vehicle-integrated photovoltaics (VIPV) in electrified mobility: a structured systematic review of technical performance, system integration, and strategic deployment. *Solar*, 6(3), 26. [doi:10.3390/solar6030026](https://doi.org/10.3390/solar6030026)
-- Hussain, S.N., **Al-Mandhari, M.**, Ali, S.M.F., Zaib, A., Ghosh, A. (2026). GIS-driven regional assessment for sustainable data center siting in the United Kingdom. *Land*, 15(3), 516. [doi:10.3390/land15030516](https://doi.org/10.3390/land15030516)
+- **[ptx-methanol-surrogate](https://github.com/Malmand/ptx-methanol-surrogate)**: physics-constrained machine-learning surrogates of a power-to-methanol reactor, trained on noisy operating logs.
+- **[pv-pem-electrolyser-degradation](https://github.com/Malmand/pv-pem-electrolyser-degradation)**: a year of PV-driven PEM electrolyser performance and ageing in Oman and the UK; code for an *Energies* Editor's Choice article.
+- **[energy-time-series-transfer-learning](https://github.com/Malmand/energy-time-series-transfer-learning)**: household PV and load forecasting with LSTM and Transformer models, transfer learning, and EV and heat-pump detection from meter data.
+- **[AEM_Case_based](https://github.com/Malmand/AEM_Case_based)**: electrochemical and thermal model of an AEM water electrolyser, calibrated on polarisation and EIS data.
 
-Full list on [ORCID](https://orcid.org/0009-0000-8533-8702).
+### Publications
 
-### Tools
+- **Al-Mandhari, M.**, Ghosh, A. (2025). Modelling solar intermittency effects on PEM electrolyser performance and degradation: a comparison of Oman and UK. *Energies* 18, 6131. [doi](https://doi.org/10.3390/en18236131) · *Editor's Choice*
+- **Al-Mandhari, M.** et al. (2026). Floating photovoltaic-powered green hydrogen for decarbonization of the energy-consuming sectors in the United Kingdom. *Energies* 19, 2931. [doi](https://doi.org/10.3390/en19122931)
+- Sanders, C. et al., incl. **Al-Mandhari, M.** (2026). From pasture to platform: integrating agrivoltaics and green hydrogen for the Penzance-London railway corridor. *Solar Energy* 318, 115064. [doi](https://doi.org/10.1016/j.solener.2026.115064)
 
-**Modelling and optimisation:** Python, Pyomo (MILP/LP), OMEGAlpes, HiGHS, Gurobi, SciPy, PyBaMM, pandapower, MATLAB/Simulink, FMI/FMU · **Data and ML:** pandas, NumPy, SQL, pytest, uncertainty and sensitivity analysis, scikit-learn, XGBoost, PyTorch, TensorFlow · **Signal processing and fatigue:** filtering, envelope and spectral analysis, rainflow counting · **Energy tools:** pvlib, PVsyst, HOMER Pro, QGIS, GaBi, openLCA
+More on [ORCID](https://orcid.org/0009-0000-8533-8702).
+
+### Toolbox
+
+**Modelling and optimisation:** Python, Pyomo, OMEGAlpes, HiGHS, Gurobi, PyBaMM, pandapower, MATLAB/Simulink, FMI  
+**Data and machine learning:** pandas, SQL, scikit-learn, XGBoost, PyTorch, TensorFlow, uncertainty and sensitivity analysis  
+**Energy tools:** pvlib, PVsyst, HOMER Pro, QGIS, openLCA, GaBi
 
 ### Contact
 
-[LinkedIn](https://www.linkedin.com/in/mohamed-al-mandhari) · [ORCID](https://orcid.org/0009-0000-8533-8702)
+[LinkedIn](https://www.linkedin.com/in/mohamed-al-mandhari) · [ORCID](https://orcid.org/0009-0000-8533-8702) · s370793@studenti.polito.it
 
-Languages: Arabic (native), English (professional), French (A2, learning)
+Arabic (native) · English (professional) · French (A2, learning)
