@@ -13,7 +13,7 @@ Energy systems engineer working where **physical models meet data**: energy stor
 
 | Project | What it does | Stack |
 |---|---|---|
-| [hybrid-energy-storage-pybamm](https://github.com/Malmand/hybrid-energy-storage-pybamm) | PyBaMM battery model calibrated against experimental data, reduced to equivalent-circuit models, and used to size a battery-supercapacitor system and its energy management; plant exported as an FMI 2.0 FMU | Python, PyBaMM, pythonfmu, fmpy |
+| [hybrid-energy-storage-pybamm](https://github.com/Malmand/hybrid-energy-storage-pybamm) | PyBaMM battery model calibrated against experimental data, reduced to equivalent-circuit models, and used to size a battery-supercapacitor system for frequency reserve; plant exported as an FMI 2.0 FMU; sizing re-checked with a year of measured European grid frequency | Python, PyBaMM, pythonfmu, fmpy |
 | [ptx-methanol-surrogate](https://github.com/Malmand/ptx-methanol-surrogate) | Power-to-methanol reactor: cleaning noisy operational logs, physics-constrained ML surrogates that respect mass balances and equilibrium, and an optimiser for operating parameters | Python, scikit-learn, SciPy |
 | [pv-pem-electrolyser-degradation](https://github.com/Malmand/pv-pem-electrolyser-degradation) | Year-long PV-PEM electrolyser simulation of performance and degradation, Oman vs UK; code for an *Energies* Editor's Choice article | Python, pvlib |
 | [AEM_Case_based](https://github.com/Malmand/AEM_Case_based) | AEM water electrolyser model: electrochemical fitting, 1D thermal model, efficiency, wet vs dry cathode, EIS calibration | Python, SciPy |
@@ -28,7 +28,7 @@ Energy systems engineer working where **physical models meet data**: energy stor
 
 | Project | What it does | Stack |
 |---|---|---|
-| [wind-fleet-instability-monitoring](https://github.com/Malmand/wind-fleet-instability-monitoring) | Wind fleet analysis: SQL database of SCADA data, data-quality checks, detection of edgewise blade instabilities, rainflow fatigue impact, KPIs and a digital-twin adapter; plus a machine-learning load emulator for power de-rating transients, built on a BEM-based reduced-order aero-servo-elastic turbine model and validated on prototype-style field data | Python, SQL, SciPy, XGBoost, rainflow |
+| [wind-fleet-instability-monitoring](https://github.com/Malmand/wind-fleet-instability-monitoring) | Wind fleet analysis: SQL database of SCADA data, data-quality checks, detection of edgewise blade instabilities, rainflow fatigue impact, KPIs and a digital-twin adapter; plus a machine-learning load emulator for power de-rating transients, built on a BEM-based reduced-order aero-servo-elastic turbine model and checked against real 20 Hz load measurements of a research turbine during frequency-control power shedding | Python, SQL, SciPy, XGBoost, rainflow |
 | [energy-time-series-transfer-learning](https://github.com/Malmand/energy-time-series-transfer-learning) | Household PV and grid-import forecasting with LSTM and Transformer models and transfer learning; identifying EV charging and heat-pump use from smart-meter data alone | PyTorch, TensorFlow, XGBoost |
 
 ### Selected publications
