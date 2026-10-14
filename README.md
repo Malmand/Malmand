@@ -11,7 +11,7 @@ Energy systems engineer working on **optimisation, forecasting and modelling of 
 
 | Project | What it does | Stack |
 |---|---|---|
-| [residential-microgrid-ems](https://github.com/Malmand/residential-microgrid-ems) | Home microgrid with PV, battery, bidirectional EV and heat pump: rule-based vs MILP control, annual planning and sizing, and XGBoost day-ahead forecasts driving a model-predictive controller | Python, Pyomo, HiGHS, XGBoost |
+| [residential-microgrid-ems](https://github.com/Malmand/residential-microgrid-ems) | Home microgrid with PV, battery, bidirectional EV and heat pump: rule-based vs MILP control, annual planning and sizing, XGBoost forecast-driven MPC, and dispatch coupled with load flow on an LV feeder | Python, Pyomo, HiGHS, XGBoost, pandapower |
 | [energy-time-series-transfer-learning](https://github.com/Malmand/energy-time-series-transfer-learning) | Household PV and grid-import forecasting with LSTM and Transformer models and transfer learning; identifying EV charging and heat-pump use from smart-meter data alone | PyTorch, TensorFlow, XGBoost |
 | [pv-pem-electrolyser-degradation](https://github.com/Malmand/pv-pem-electrolyser-degradation) | Year-long PV-PEM electrolyser simulation of performance and degradation, Oman vs UK; code for an *Energies* Editor's Choice article | Python, pvlib |
 | [AEM_Case_based](https://github.com/Malmand/AEM_Case_based) | AEM water electrolyser model: electrochemical fitting, 1D thermal model, efficiency, wet vs dry cathode, EIS calibration | Python, SciPy |
