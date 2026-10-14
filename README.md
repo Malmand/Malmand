@@ -12,6 +12,7 @@ Energy systems engineer working on **optimisation, forecasting and modelling of 
 | Project | What it does | Stack |
 |---|---|---|
 | [residential-microgrid-ems](https://github.com/Malmand/residential-microgrid-ems) | Home microgrid with PV, battery, bidirectional EV and heat pump: rule-based vs MILP control, annual planning and sizing, XGBoost forecast-driven MPC, dispatch coupled with load flow on an LV feeder, and automated closed-loop tests of a battery site controller | Python, Pyomo, HiGHS, XGBoost, pandapower |
+| [hybrid-energy-storage-pybamm](https://github.com/Malmand/hybrid-energy-storage-pybamm) | PyBaMM battery model calibrated against experimental data, reduced to equivalent-circuit models, and used to size a battery-supercapacitor system with its energy management; plant exported as an FMI 2.0 FMU | Python, PyBaMM, pythonfmu, fmpy |
 | [energy-time-series-transfer-learning](https://github.com/Malmand/energy-time-series-transfer-learning) | Household PV and grid-import forecasting with LSTM and Transformer models and transfer learning; identifying EV charging and heat-pump use from smart-meter data alone | PyTorch, TensorFlow, XGBoost |
 | [pv-pem-electrolyser-degradation](https://github.com/Malmand/pv-pem-electrolyser-degradation) | Year-long PV-PEM electrolyser simulation of performance and degradation, Oman vs UK; code for an *Energies* Editor's Choice article | Python, pvlib |
 | [AEM_Case_based](https://github.com/Malmand/AEM_Case_based) | AEM water electrolyser model: electrochemical fitting, 1D thermal model, efficiency, wet vs dry cathode, EIS calibration | Python, SciPy |
@@ -28,7 +29,7 @@ Full list on [ORCID](https://orcid.org/0009-0000-8533-8702).
 
 ### Tools
 
-**Modelling and optimisation:** Python, Pyomo (MILP/LP), HiGHS, Gurobi, MATLAB/Simulink · **Data and ML:** pandas, NumPy, scikit-learn, XGBoost, PyTorch, TensorFlow · **Energy tools:** pvlib, PVsyst, HOMER Pro, QGIS, GaBi, openLCA
+**Modelling and optimisation:** Python, PyBaMM, Pyomo (MILP/LP), HiGHS, Gurobi, MATLAB/Simulink, FMI/FMU · **Data and ML:** pandas, NumPy, scikit-learn, XGBoost, PyTorch, TensorFlow · **Energy tools:** pvlib, PVsyst, HOMER Pro, QGIS, GaBi, openLCA
 
 ### Contact
 
