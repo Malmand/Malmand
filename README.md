@@ -28,7 +28,7 @@ Energy systems engineer working where **physical models meet data**: energy stor
 
 | Project | What it does | Stack |
 |---|---|---|
-| [wind-fleet-instability-monitoring](https://github.com/Malmand/wind-fleet-instability-monitoring) | Wind fleet analysis: SQL database of SCADA data, data-quality checks, detection of edgewise blade instabilities, rainflow fatigue impact, KPIs and weekly summaries, and a JSON adapter for digital-twin integration | Python, SQL, SciPy, rainflow |
+| [wind-fleet-instability-monitoring](https://github.com/Malmand/wind-fleet-instability-monitoring) | Wind fleet analysis: SQL database of SCADA data, data-quality checks, detection of edgewise blade instabilities, rainflow fatigue impact, KPIs and a digital-twin adapter; plus a machine-learning load emulator for power de-rating transients, built on a BEM-based reduced-order aero-servo-elastic turbine model and validated on prototype-style field data | Python, SQL, SciPy, XGBoost, rainflow |
 | [energy-time-series-transfer-learning](https://github.com/Malmand/energy-time-series-transfer-learning) | Household PV and grid-import forecasting with LSTM and Transformer models and transfer learning; identifying EV charging and heat-pump use from smart-meter data alone | PyTorch, TensorFlow, XGBoost |
 
 ### Selected publications
