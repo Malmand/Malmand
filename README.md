@@ -2,7 +2,7 @@
 
 **Energy systems engineer. I build open, tested models of energy systems and use them to answer design questions.**
 
-My work sits where physical models meet data: batteries and electrolysers, multi-energy neighbourhoods, and wind turbines, from component physics to optimisation, machine learning and validation against measurements. I am on the Erasmus Mundus DENSYS Master's (Université de Lorraine, now Politecnico di Torino) and hold a first-class BEng in Renewable Energy Engineering from the University of Exeter.
+My work sits where physical models meet data: batteries and electrolysers, buildings and multi-energy neighbourhoods, distribution grids and wind turbines, from component physics to optimisation, machine learning and validation against measurements. I am on the Erasmus Mundus DENSYS Master's (Université de Lorraine, now Politecnico di Torino) and hold a first-class BEng in Renewable Energy Engineering from the University of Exeter.
 
 **Looking for:** a six-month Master's thesis internship from March 2027 (mid-February possible), with a PhD as the next step.
 
@@ -13,6 +13,14 @@ My work sits where physical models meet data: batteries and electrolysers, multi
 **[muscat-energy-hub](https://github.com/Malmand/muscat-energy-hub)** · *How much model detail does a sizing study need?*  
 A district-cooled neighbourhood with PV, battery, chiller, chilled-water tank and a PEM electrolyser, sized with a simple and a detailed model of every component. Most details barely move the design; the buildings' thermal mass cuts the optimal tank by 39%. Includes new, tested OMEGAlpes units for a chiller and an electrolyser.  
 `Pyomo` `HiGHS` `OMEGAlpes` `uncertainty analysis`
+
+**[building-digital-twin-kalman](https://github.com/Malmand/building-digital-twin-kalman)** · *A digital twin kept in step with a real building*  
+Grey-box thermal models of 23 office zones identified from 18 months of open measured data (CU-BEMS), run online as an extended Kalman filter. The synchronised twin forecasts, detects faults and tests demand-response scenarios; a hybrid with gradient boosting beats both physics and machine learning alone.  
+`Kalman filter` `grey-box models` `XGBoost` `demand response`
+
+**[lv-grid-copper-or-flexibility](https://github.com/Malmand/lv-grid-copper-or-flexibility)** · *Copper or flexibility? Long-term LV planning*  
+Three SimBench feeders planned from 2025 to 2045 with full-year power flows: cables and transformers against §14a control, a battery and a tap-changing transformer, compared on cost, life-cycle CO2, metals and regret with WSM, TOPSIS, PROMETHEE II and SMAA-2.  
+`pandapower` `LCA` `MCDA` `SMAA`
 
 **[wind-fleet-instability-monitoring](https://github.com/Malmand/wind-fleet-instability-monitoring)** · *Turbine loads from SCADA data*  
 Detection of edgewise blade instabilities and their fatigue cost across a fleet, and a machine-learning load emulator for power de-rating, checked against real 20 Hz measurements of a research turbine.  
@@ -43,12 +51,13 @@ More on [ORCID](https://orcid.org/0009-0000-8533-8702).
 
 ### Toolbox
 
-**Modelling and optimisation:** Python, Pyomo, OMEGAlpes, HiGHS, Gurobi, PyBaMM, pandapower, MATLAB/Simulink, FMI  
+**Modelling and optimisation:** Python, Pyomo, OMEGAlpes, HiGHS, Gurobi, PyBaMM, pandapower, SimBench, MATLAB/Simulink, FMI  
+**Decision support:** multi-criteria analysis (WSM, TOPSIS, PROMETHEE, SMAA), life-cycle assessment  
 **Data and machine learning:** pandas, SQL, scikit-learn, XGBoost, PyTorch, TensorFlow, uncertainty and sensitivity analysis  
 **Energy tools:** pvlib, PVsyst, HOMER Pro, QGIS, openLCA, GaBi
 
 ### Contact
 
-[LinkedIn](https://www.linkedin.com/in/mohamed-al-mandhari) · [ORCID](https://orcid.org/0009-0000-8533-8702) · s370793@studenti.polito.it
+[LinkedIn](https://www.linkedin.com/in/mohamed-al-mandhari) · [ORCID](https://orcid.org/0009-0000-8533-8702) · e66840u@etu.univ-lorraine.fr
 
 Arabic (native) · English (professional) · French (A2, learning)
