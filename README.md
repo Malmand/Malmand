@@ -39,13 +39,14 @@ PV, battery, bidirectional EV and heat pump: MILP control, annual sizing, foreca
 - **[ptx-methanol-surrogate](https://github.com/Malmand/ptx-methanol-surrogate)**: physics-constrained machine-learning surrogates of a power-to-methanol reactor, trained on noisy operating logs simulated with a kinetic plant model.
 - **[pv-pem-electrolyser-degradation](https://github.com/Malmand/pv-pem-electrolyser-degradation)**: a year of PV-driven PEM electrolyser performance and ageing in Oman and the UK; code for an *Energies* Editor's Choice article.
 - **[energy-time-series-transfer-learning](https://github.com/Malmand/energy-time-series-transfer-learning)**: household PV and load forecasting with LSTM and Transformer models, transfer learning, and EV and heat-pump detection from meter data.
-- **[AEM_Case_based](https://github.com/Malmand/AEM_Case_based)**: electrochemical and thermal model of an AEM water electrolyser, calibrated on polarisation and EIS data.
+- **[AEM_Case_based](https://github.com/Malmand/AEM_Case_based)**: electrochemical and thermal model of an AEM water electrolyser, calibrated on polarisation and EIS data (team project; my part was the electrochemical model).
 
 ### Publications
 
 - **Al-Mandhari, M.**, Ghosh, A. (2025). Modelling solar intermittency effects on PEM electrolyser performance and degradation: a comparison of Oman and UK. *Energies* 18, 6131. [doi](https://doi.org/10.3390/en18236131) · *Editor's Choice*
 - **Al-Mandhari, M.** et al. (2026). Floating photovoltaic-powered green hydrogen for decarbonization of the energy-consuming sectors in the United Kingdom. *Energies* 19, 2931. [doi](https://doi.org/10.3390/en19122931)
 - Sanders, C. et al., incl. **Al-Mandhari, M.** (2026). From pasture to platform: integrating agrivoltaics and green hydrogen for the Penzance-London railway corridor. *Solar Energy* 318, 115064. [doi](https://doi.org/10.1016/j.solener.2026.115064)
+- Hussain, S.N., **Al-Mandhari, M.** et al. (2026). GIS-driven regional assessment for sustainable data center siting in the United Kingdom. *Land* 15, 516. [doi](https://doi.org/10.3390/land15030516)
 
 More on [ORCID](https://orcid.org/0009-0000-8533-8702).
 
